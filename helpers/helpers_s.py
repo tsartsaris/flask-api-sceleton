@@ -1,7 +1,8 @@
 """
-- Helpers functions by Sotiris
+- Helpers functions by Sotiris functions included in this file:
 - get_endpoint(module_name: str) -> str  *(module.sub_module -> /module/sub_module)*
 """
+
 
 def get_endpoint(module_name: str) -> str:
     """
@@ -16,10 +17,10 @@ def get_endpoint(module_name: str) -> str:
          (except the last part) separated by slashes. All underscores in the module name are replaced with dashes.
 
     Example:
-    If the input is "module.sub_module.function", the function will print:
-    "Will create end point for : module.sub_module.function"
-    "Created endpoint : /module/sub-module"
-    And it will return "/module/sub-module"
+    If the input is "module.sub_module", the function will print:
+    "Will create end point for : module.sub_module"
+    "Created endpoint : /module/sub-module/"
+    And it will return "/module/sub-module/"
     """
 
     print(f"Will create end point for : {module_name}")
